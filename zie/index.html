@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Ziegelhof</title>
+	<link rel="stylesheet" type="text/css" href="css/ziegelhof.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(47.0431625, 7.0806779),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+	<header>
+		<h1>Ziegelhof</h1>
+
+		<ul>
+			<li><a href="*"></a>About us</li>
+			<li><a href="*"></a>contact</li>
+			<li><a href="*"></a>gallery</li>
+		</ul>
+	</header>
+
+	<div id="map"></div>
+</body>
+</html>
+
+<!--
+https://www.google.ch/maps/@47.0431625,7.0806779,647m/data=!3m1!1e3
+https://www.google.ch/maps/@47.0431624,7.0806779,17.28z
